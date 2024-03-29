@@ -39,6 +39,8 @@ void * firstList(List * list){
     list->current = list->head;
     if(list->current) 
       return list->current->data;
+    else
+      return NULL;
 }
 
 void * nextList(List * list) {
