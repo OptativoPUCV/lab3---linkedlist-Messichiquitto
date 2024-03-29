@@ -138,3 +138,13 @@ Fri 29 Mar 2024 09:05:03 PM UTC:
  tests:  9|3
 total_score: 35/70
 5670a9d
+Fri 29 Mar 2024 09:09:02 PM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:76:17: error: ‘Node’ has no member named ‘head’
+   76 |       list->head->head->prev = node;
+      |                 ^~
+Compilation failed
+1833749
