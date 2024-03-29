@@ -20,3 +20,22 @@ Fri 29 Mar 2024 08:49:04 PM UTC:
  tests:  1|5
 total_score: 10/70
 91ea1aa
+Fri 29 Mar 2024 08:51:35 PM UTC: 
+ list.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:5: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   33 |     list->head = NULL;
+      |     ^~~~
+      |     List
+list.c:33:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:12: error: unused variable ‘lista’ [-Werror=unused-variable]
+   32 |     List * lista = (List *)malloc(sizeof(List));
+      |            ^~~~~
+list.c:37:1: error: control reaches end of non-void function [-Werror=return-type]
+   37 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+bb60bb7
