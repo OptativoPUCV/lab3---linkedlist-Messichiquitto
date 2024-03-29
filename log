@@ -2,3 +2,15 @@ Fri 29 Mar 2024 08:46:17 PM UTC:
  tests:  0|6
 total_score: 0/70
 4b071b3
+Fri 29 Mar 2024 08:48:51 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c:37:6: error: expected identifier or ‘(’ before ‘return’
+   37 |      return NULL;
+      |      ^~~~~~
+list.c:38:1: error: expected identifier or ‘(’ before ‘}’ token
+   38 | }
+      | ^
+Compilation failed
+fee074e
