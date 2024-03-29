@@ -36,10 +36,8 @@ List * createList() {
 }
 
 void * firstList(List * list){
-    if (list == NULL) {
-        return NULL;
-    }
-  return(list->head);
+    list->current = list->head;
+  if(list->current) return list->current->key;
 }
 
 void * nextList(List * list) {
